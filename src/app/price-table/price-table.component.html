@@ -1,0 +1,11 @@
+<div class="card mb-5 mb-lg-0">
+    <div class="card-body">
+      <h5 class="card-title text-muted text-uppercase text-center">{{price_plan}}</h5>
+      <h6 class="card-price text-center">{{amount}}<span class="period">/month</span></h6>
+      <hr>
+      <ul class="fa-ul" *ngFor ="let x of plan">
+        <li [class] = 'x.text_style'><span class="fa-li"><i [class]="x.font_style"></i></span><span [class]="x.font_highlight">{{x.plan}}</span></li>
+      </ul>
+      <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
+    </div>
+  </div>

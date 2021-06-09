@@ -1,0 +1,23 @@
+<!-- <div class="container">
+    <div class="row mt-4">
+        <div class="col-md-3" *ngFor="let x of data">
+            <app-card *ngIf="x.inStock" [heading]="x.heading" [title]="x.title" [description]="x.description" [color]="x.color"></app-card>
+        </div>
+        
+    </div>
+</div> -->
+
+
+<!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
+
+<section class="pricing py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Free Tier -->
+            <div class="col-lg-4" *ngFor="let data of price">
+                <app-price-table [price_plan]="data.price_plan" [amount]="data.amount" [plan]="data.access_plan">
+                </app-price-table>
+            </div>
+        </div>
+    </div>
+</section>
